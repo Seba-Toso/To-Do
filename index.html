@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    <title>To Do</title>
+</head>
+<body onload="start()">
+    
+    <div class="container">
+
+        <h3 class="title">To do List:</h3>
+    
+        <div class="options">
+            <div class="check">
+                <p class="option">Normal</p>
+                <div class="inptcont">
+                    <input type="checkbox" name="type" class="type" onclick="TogglePriority()">
+                </div>
+                <p class="option">Priority</p>
+                <button class="add clean" onclick="cleanList()">X</button>
+                <button class="add" id="add" onclick="addTask()" >Add</button>
+            </div>
+    
+            <input type="text" name="name" id="Task" placeholder="New Task..." autocomplete="off" autofocus/>
+        </div>
+    
+
+
+        <div class="olcont">
+            <ol id="olist">
+            </ol>
+        </div>
+        
+
+        <div class="ulcont">
+            <ul id="ulist">
+            </ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
