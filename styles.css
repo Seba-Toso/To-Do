@@ -152,8 +152,8 @@ li {
 button {
     width: 20px;
     height: 20px;
-    background-color: aliceblue;
-    color: crimson;
+    background-color: crimson;
+    color: aliceblue;
     border-radius: 20px;
     outline: none;
     opacity: 0.1;
