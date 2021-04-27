@@ -11,7 +11,7 @@ function start(){
         var storedlistp = localStorage.getItem("listP");
         if(storedlistp != null){
             listP = storedlistp.split(",");
-            console.log(listP)
+            //console.log(listP)
             listType = "olist"
             
             listP.forEach((task, index) => {
@@ -22,7 +22,7 @@ function start(){
         var storedlist = localStorage.getItem("list");
         if(storedlist != null){
             list = storedlist.split(",");
-            console.log(list)
+            //console.log(list)
             listType = "ulist"
     
             list.forEach((task, index) => {
@@ -37,7 +37,7 @@ function start(){
 //BUTTON FUNCTIONS
 function TogglePriority(){
     type = !type;
-    console.log("El tipo de prioridad ha cambiado "+type)
+    //console.log("El tipo de prioridad ha cambiado "+type)
 }
 
 var input = document.getElementById("Task");
@@ -140,10 +140,10 @@ function delTask(){
     var button = document.getElementsByClassName("closeTask");
     console.log("Borrado")
     for (let i = 0; i < button.length; i++){
-        console.log(i)
+        //console.log(i)
     button[i].onclick = function() {
-        console.log(i)
-        console.log(button[i])
+        //console.log(i)
+        //console.log(button[i])
         var li = this.parentElement;
         li.style.display = "none";
         }
